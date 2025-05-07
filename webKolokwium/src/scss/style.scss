@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+body {
+  font-family: $font-family;
+  background-color: $primary-color;
+}
+
+.container {
+  @include center;
+  height: 100vh;
+}

@@ -1,0 +1,25 @@
+# node modules (zawsze ignoruj)
+node_modules/
+
+# build output (np. dist/)
+dist/
+
+# logi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# lokalne ustawienia VS Code
+.vscode/
+
+# środowiskowe zmienne i konfiguracje
+.env
+.env.*.local
+
+# cache Vite
+.cache/
+.vite/
+
+# pliki systemowe (Mac/Windows)
+.DS_Store
+Thumbs.db

@@ -1,13 +1,37 @@
-@import 'variables';
-@import 'mixins';
-@import 'reset';
+// src/scss/style.scss
+
+// Zmienne
+$primary-color: #4f46e5;
+
+// reset stylów bazowych
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: $font-family;
-  background-color: $primary-color;
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #111827;
+  padding: 1rem;
 }
 
-.container {
-  @include center;
-  height: 100vh;
+// Header
+
+.header{
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+
+  &__logo{
+    font-weight:bold;
+  }
+
+  &__nav {
+    display: none; // ukryte na mobile
+  }
 }
+
